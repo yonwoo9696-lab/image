@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>비밀 페이지 😏</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      cursor: pointer;
+    }
+    img {
+      display: none;
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body onclick="showImage()">
+  <h1 id="text">👉 클릭하면 뭐가 나올지도 몰라 😳</h1>
+  <img id="photo" src="yourphoto.jpg" alt="Surprise!">
+  
+  <script>
+    function showImage() {
+      document.getElementById("text").style.display = "none";
+      document.getElementById("photo").style.display = "block";
+    }
+  </script>
+</body>
+</html>
